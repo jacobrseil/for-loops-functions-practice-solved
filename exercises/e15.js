@@ -5,8 +5,10 @@
 // NOTE: You can NOT use the array.concat() method in your code
 
 export function concatArrays(arr1, arr2) {
-  // Your code goes here...
-
+  const concatenatedArray = [];
+  for (const value of arr1) { concatenatedArray.push(value); }
+  for (const value of arr2) { concatenatedArray.push(value); }
+  return concatenatedArray;
 }
 
 

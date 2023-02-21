@@ -6,8 +6,12 @@
 
 export function concatArrays(arr1, arr2) {
   const concatenatedArray = [];
-  for (const value of arr1) { concatenatedArray.push(value); }
-  for (const value of arr2) { concatenatedArray.push(value); }
+  for (const value of arr1) {
+    concatenatedArray.push(value);
+  }
+  for (const value of arr2) {
+    concatenatedArray.push(value);
+  }
   return concatenatedArray;
 }
 

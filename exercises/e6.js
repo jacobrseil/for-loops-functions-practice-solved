@@ -5,8 +5,10 @@
 
 export function getClientWithNoMoney(array) {
    const clientWithNoMoney = [];
-   for ( const {balance, name} of array) {
-      if (balance === 0) { clientWithNoMoney.push(name); }
+   for (const { balance, name } of array) {
+      if (balance === 0) {
+         clientWithNoMoney.push(name);
+      }
    }
    return clientWithNoMoney;
 }

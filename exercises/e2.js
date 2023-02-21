@@ -5,7 +5,9 @@
 export function getNumbersWithSquareRoots(max) {
    const numbersWithSquareRoots = [];
    for (let i = 0; i < max+1; i++) {
-      if (Math.sqrt(i) % 1 === 0) { numbersWithSquareRoots.push(i); }
+      if (Math.sqrt(i) % 1 === 0) {
+         numbersWithSquareRoots.push(i);
+      }
    }
    return numbersWithSquareRoots;
 }

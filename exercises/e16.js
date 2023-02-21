@@ -9,8 +9,12 @@ export function flatArrays(array) {
   const flattenedArray = [];
   for (const value of array) {
     if (typeof value === 'object') {
-      for (const nestedValue of value) { flattenedArray.push(nestedValue); }
-    } else { flattenedArray.push(value); }
+      for (const nestedValue of value) {
+        flattenedArray.push(nestedValue);
+      }
+    } else {
+      flattenedArray.push(value);
+    }
   }
   return flattenedArray;
 }

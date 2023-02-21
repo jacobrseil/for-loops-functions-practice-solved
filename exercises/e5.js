@@ -6,7 +6,9 @@
 
 export function getAllClientNames(array) {
    const clientNames = [];
-   for (const {name} of array) { clientNames.push(name); }
+   for (const { name } of array) {
+      clientNames.push(name);
+   }
    return clientNames;
 }
 

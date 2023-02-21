@@ -11,7 +11,9 @@ export function getAllAccountsWithSumsOfDepositsLess2000(array) {
       accountsWithSumsOfDepositsLess2000.push(client);
     } else {
       let sumOfDeposits = 0;
-      for (const value of client.deposits) { sumOfDeposits += value; }
+      for (const value of client.deposits) {
+        sumOfDeposits += value;
+      }
       if (sumOfDeposits < 2000) {
         accountsWithSumsOfDepositsLess2000.push(client);
       }

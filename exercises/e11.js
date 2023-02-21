@@ -6,10 +6,12 @@
 
 export function getAllWithdrawals(array) {
   const allWithdrawals = [];
-  for (const {withdrawals} of array) {
+  for (const { withdrawals } of array) {
     let clientWithdrawals = 0;
     if (withdrawals) {
-      for (const value of withdrawals) { clientWithdrawals += value; }
+      for (const value of withdrawals) {
+        clientWithdrawals += value;
+      }
     }
     allWithdrawals.push(clientWithdrawals);
   }
